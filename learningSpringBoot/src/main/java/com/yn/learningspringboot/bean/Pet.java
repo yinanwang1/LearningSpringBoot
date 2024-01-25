@@ -1,15 +1,13 @@
 package com.yn.learningspringboot.bean;
 
-import lombok.*;
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@ConfigurationProperties(prefix = "person.pet")
 @Component
-@ConfigurationProperties(prefix = "mycar")
-public class Car {
-    public String name;
-    public String price;
+@Data
+public class Pet {
+    private String name;
+    private Double weight;
 }

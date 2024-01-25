@@ -1,0 +1,30 @@
+person:
+  user-name: '张三\n历史'
+  boss: true
+  birth: 2019/12/9
+  age: 21
+  interests:
+    - 篮球
+    - 足球
+    - "18"
+  animal: [ 阿毛, 阿狗 ]
+  score:
+    english: 80
+    math: 90
+  salary:
+    - 100
+    - 111
+  pet:
+    name: 无敌的存在
+    weight: 11111
+  all-pets:
+    sick:
+      - {name: ppp, weight: 100}
+      - name: qqq
+        weight: 200
+    health:
+      - {name: 阿花, weight: 300}
+      - name: 阿草
+        weight: 400
+
+
