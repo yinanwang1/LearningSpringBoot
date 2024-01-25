@@ -31,4 +31,11 @@ public class HelloController {
     public Person person(){
         return person;
     }
+
+    @RequestMapping("/new_year.jpg")
+    public String hello() {
+
+
+        return "Hello";
+    }
 }
