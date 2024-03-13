@@ -14,13 +14,15 @@ import java.util.Set;
 @Data
 public class Person {
     private String userName;
-    private Boolean boss;
-    private Date birth;
     private int age;
+    private Date birth;
     private Pet pet;
+
+
     private String[] interests;
     private List<String> animal;
     private Map<String, Object> score;
     private Set<Double> salary;
     private Map<String, List<Pet>> allPets;
+    private Boolean boss;
 }

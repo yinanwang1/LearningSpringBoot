@@ -9,5 +9,7 @@ import org.springframework.stereotype.Component;
 @Data
 public class Pet {
     private String name;
+    private Integer age;
+
     private Double weight;
 }

@@ -19,19 +19,20 @@ person:
     weight: 11111
   all-pets:
     sick:
-      - {name: ppp, weight: 100}
+      - { name: ppp, weight: 100 }
       - name: qqq
         weight: 200
     health:
-      - {name: 阿花, weight: 300}
+      - { name: 阿花, weight: 300 }
       - name: 阿草
         weight: 400
 
 
 spring:
   mvc:
-    static-path-pattern: /res/**
-  web:
-    resources:
-      static-locations: classpath:/haha
+    hiddenmethod:
+      filter:
+        enabled: true
+    contentnegotiation:
+      favor-parameter: true
 
