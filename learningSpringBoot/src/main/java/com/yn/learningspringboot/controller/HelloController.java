@@ -1,8 +1,10 @@
 package com.yn.learningspringboot.controller;
 
+import com.yn.learningspringboot.bean.Account;
 import com.yn.learningspringboot.bean.Car;
 import com.yn.learningspringboot.bean.Person;
 import com.yn.learningspringboot.schedule.AsyncTasks;
+import com.yn.learningspringboot.service.AccountService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
@@ -87,7 +89,6 @@ public class HelloController {
             log.info("task one finally");
         }
 
-
         return "task one";
     }
 
@@ -107,5 +108,18 @@ public class HelloController {
 
 
         return "task two";
+    }
+
+    @Autowired
+    AccountService accountService;
+
+    @GetMapping("/account")
+    public Account getById(@RequestParam("id") String id) {
+        return accountService.getAccountById(id);
+    }
+
+    @GetMapping("/user")
+    public String getUser(@RequestParam("id") String id) {
+        return "GET-张三";
     }
 }
