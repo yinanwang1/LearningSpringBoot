@@ -105,7 +105,7 @@ public class HelloController {
         } finally {
             log.info("task two finally");
         }
-
+        
 
         return "task two";
     }
@@ -116,10 +116,5 @@ public class HelloController {
     @GetMapping("/account")
     public Account getById(@RequestParam("id") String id) {
         return accountService.getAccountById(id);
-    }
-
-    @GetMapping("/user")
-    public String getUser(@RequestParam("id") String id) {
-        return "GET-张三";
     }
 }
