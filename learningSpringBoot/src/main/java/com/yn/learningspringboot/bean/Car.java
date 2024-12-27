@@ -1,5 +1,6 @@
 package com.yn.learningspringboot.bean;
 
+import cn.hutool.core.date.DateTime;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,6 +24,7 @@ public class Car implements Serializable {
     private String name;
     private String price;
     private String color;
+    private Integer weight;
 }
 
 

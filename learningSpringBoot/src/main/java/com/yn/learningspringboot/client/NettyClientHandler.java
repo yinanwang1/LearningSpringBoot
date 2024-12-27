@@ -23,13 +23,24 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         ctx.close();
 
-        log.info("服务端终止了服务");
+        log.info("服务端终止了服务. client port is : " + ctx.channel().localAddress());
     }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        log.info("channelRead data");
+        log.info("channelRead data. client port is {}.", ctx.channel().localAddress());
         log.info("回写数据： {}", msg);
+
+        MsgData msgData = (MsgData) msg;
+        if (2011 == msgData.type) {
+            MsgData batteryMsgData = new MsgData();
+            batteryMsgData.version = 0;
+            batteryMsgData.status = 0;
+            batteryMsgData.type = 1011;
+            batteryMsgData.setBody("{}");
+            ctx.channel().writeAndFlush(batteryMsgData);
+        }
+
     }
 
     @Override

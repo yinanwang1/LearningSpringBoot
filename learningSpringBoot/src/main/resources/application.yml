@@ -36,7 +36,6 @@ spring:
     contentnegotiation:
       favor-parameter: true
 
-
 #server:
 #  port: 8888
 

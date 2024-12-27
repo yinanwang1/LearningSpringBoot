@@ -2,10 +2,7 @@ package com.yn.learningspringboot.controller;
 
 import com.yn.learningspringboot.annotation.InitSex;
 import com.yn.learningspringboot.annotation.ValidateAge;
-import com.yn.learningspringboot.bean.Account;
-import com.yn.learningspringboot.bean.Car;
-import com.yn.learningspringboot.bean.Person;
-import com.yn.learningspringboot.bean.User;
+import com.yn.learningspringboot.bean.*;
 import com.yn.learningspringboot.schedule.AsyncTasks;
 import com.yn.learningspringboot.service.AccountService;
 import jakarta.servlet.http.HttpServletRequest;
@@ -178,5 +175,13 @@ public class HelloController {
         } else {
             log.error("校验未通过");
         }
+    }
+
+    @Autowired
+    MailService mailService;
+
+    @GetMapping("/mail")
+    public String sendMail() {
+        return mailService.sendMail();
     }
 }
