@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class AccountService {
-
-    @Autowired
-    AccountMapper accountMapper;
-
-    public Account getAccountById(String id) {
-        log.info("accountMapper is {}", accountMapper);
-        return accountMapper.getAccount(id);
-    }
+// 因为没有数据库，暂时不使用
+//    @Autowired
+//    AccountMapper accountMapper;
+//
+//    public Account getAccountById(String id) {
+//        log.info("accountMapper is {}", accountMapper);
+//        return accountMapper.getAccount(id);
+//    }
 }

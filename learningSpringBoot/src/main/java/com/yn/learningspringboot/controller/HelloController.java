@@ -114,10 +114,10 @@ public class HelloController {
     @Autowired
     AccountService accountService;
 
-    @GetMapping("/account")
-    public Account getById(@RequestParam("id") String id) {
-        return accountService.getAccountById(id);
-    }
+//    @GetMapping("/account")
+//    public Account getById(@RequestParam("id") String id) {
+//        return accountService.getAccountById(id);
+//    }
 
     @GetMapping("/checkUser")
     public String checkUser() {

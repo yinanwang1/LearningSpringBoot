@@ -25,14 +25,4 @@ public class UserService {
         return zoneId;
     }
 
-    public static void main(String[] args) {
-        double price = 123.5;
-        int number = 10;
-        Object[] arguments = {price, number};
-        MessageFormat messageFormat = new MessageFormat("Pay {0, number, currency} for {1} books.", Locale.US);
-        System.out.println(messageFormat.format(arguments));
-        MessageFormat formatZH = new MessageFormat("{1}本书一共{0, number, currency}。", Locale.CHINA);
-        System.out.println(formatZH.format(arguments));
-    }
-
 }

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
@@ -85,4 +86,18 @@ class LearningSpringBootApplicationTests {
     }
 
     /// 测试下数据库的连接 __END__
+
+
+    /// RabbitMQ 测试
+
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
+    @Test
+    public void testSend() {
+        rabbitTemplate.convertAndSend("simple.queue", "hello world, simple.queue!");
+    }
+
+
+    /// RabbitMQ 测试 __END__
 }
