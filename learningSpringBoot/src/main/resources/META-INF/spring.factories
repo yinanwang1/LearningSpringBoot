@@ -1,8 +1,0 @@
-org.springframework.context.ApplicationContextInitializer=\
-  com.yn.learningspringboot.listener.MyApplicationContextInitializer
-
-org.springframework.context.ApplicationListener=\
-  com.yn.learningspringboot.listener.MyApplicationListener
-
-org.springframework.boot.SpringApplicationRunListener=\
-  com.yn.learningspringboot.listener.MySpringApplicationRunListener

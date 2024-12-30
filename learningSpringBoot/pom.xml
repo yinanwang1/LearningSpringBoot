@@ -11,7 +11,7 @@
     <groupId>com.yn</groupId>
     <artifactId>learningSpringBoot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <name>learningSpringBoot</name>
     <description>learningSpringBoot</description>
     <properties>
@@ -47,11 +47,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.48</version>
         </dependency>
 
         <dependency>
