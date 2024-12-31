@@ -5,22 +5,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25be0b99-6446-434c-9f6c-3c8760f83da4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/controller/ParameterTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/controller/RequestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/controller/ResponseTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/converter/NiuMessageConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LearningSpringBoot.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learningSpringBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/learningSpringBoot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/LearningSpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/LearningSpringBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/bean/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/bean/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/bean/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/bean/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/java/com/yn/learningspringboot/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learningSpringBoot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/learningSpringBoot/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/CustomerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/annotation/InitSex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/annotation/ValidateAge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/aspect/LoggingAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/bean/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/bean/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/bean/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/bean/MailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/bean/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/bean/Pet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/bean/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/bean/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/client/ConnectNettyDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/client/ConnectNettyEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/client/MsgData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/client/NettyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/client/NettyClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/client/TestNettyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/config/AdminWebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/config/FanoutConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/controller/ParameterTestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/controller/RequestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/controller/ResponseTestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/converter/NiuMessageConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/design/NumberFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/design/NumberFactoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/interceptor/LoginInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/listener/MyApplicationContextInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/listener/MyApplicationListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/listener/MyApplicationRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/listener/MyCommandLineRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/listener/MySpringApplicationRunListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/listener/SpringRabbitListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/mapper/AccountMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/schedule/AsyncTasks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/schedule/ScheduleTasks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/schedule/TaskPoolConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/service/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/servlet/MyFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/servlet/MyRegisterConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/servlet/MyServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/servlet/MyServletContextListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/test/MyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/util/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/java/com/example/customer/util/Factorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/META-INF/resources/LuFei.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/haha/markerImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/mybatis/mapper/AccountMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/mybatis/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/public/phoenix.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/resources/book.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/resources/book.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/resources/mid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/main/resources/static/new_year.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/test/java/com/example/customer/CalculatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/test/java/com/example/customer/Junit5Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/customer/src/test/java/com/example/customer/LearningSpringBootApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/src/main/java/com/example/publisher/PublisherApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learningSpringBoot/publisher/src/test/java/com/example/publisher/PublisherApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,31 +126,81 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LearningSpringBootApplicationLearningSpringBootApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/arthurwang/Git/Mine/LearningSpringBoot&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LearningSpringBootApplicationLearningSpringBootApplication.executor": "Run",
+    "Maven.LearningSpringBoot [clean].executor": "Run",
+    "Maven.LearningSpringBoot [deploy].executor": "Run",
+    "Maven.LearningSpringBoot [install].executor": "Run",
+    "Maven.customer [clean].executor": "Run",
+    "Maven.publisher [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CustomerApplication.executor": "Run",
+    "Spring Boot.PublisherApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/arthurwang/Git/Mine/LearningSpringBoot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="customer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yn.customer.CustomerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PublisherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="publisher" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yn.publisher.PublisherApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.CustomerApplication" />
+      <item itemvalue="Spring Boot.PublisherApplication" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -89,6 +215,8 @@
       <workItem from="1706170768040" duration="168000" />
       <workItem from="1708591714763" duration="2294000" />
       <workItem from="1710229546581" duration="23000" />
+      <workItem from="1735611964628" duration="1113000" />
+      <workItem from="1735613129523" duration="1221000" />
     </task>
     <servers />
   </component>
