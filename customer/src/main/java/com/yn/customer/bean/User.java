@@ -4,6 +4,9 @@ import com.yn.customer.annotation.InitSex;
 import com.yn.customer.annotation.ValidateAge;
 import lombok.Data;
 
+/**
+ * @author arthurwang
+ */
 @Data
 public class User {
     private String username;

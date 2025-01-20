@@ -2,6 +2,9 @@ package com.yn.customer.annotation;
 
 import java.lang.annotation.*;
 
+/**
+ * @author arthurwang
+ */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD})

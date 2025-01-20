@@ -4,6 +4,7 @@ import java.lang.annotation.*;
 
 /**
  * 性别赋值
+ * @author arthurwang
  */
 
 @Documented
@@ -12,5 +13,6 @@ import java.lang.annotation.*;
 @Inherited
 public @interface InitSex {
     enum SEX_TYPE {MAN, WOMAN}
+
     SEX_TYPE sex() default SEX_TYPE.MAN;
 }

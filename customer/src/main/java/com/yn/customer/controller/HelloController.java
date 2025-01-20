@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.*;
 import java.lang.reflect.Field;
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * @author arthurwang
+ */
 @Slf4j
 @RestController
 public class HelloController {
