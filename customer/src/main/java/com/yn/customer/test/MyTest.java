@@ -1,16 +1,17 @@
 package com.yn.customer.test;
 
-import cn.hutool.log.dialect.log4j2.Log4j2Log;
-import cn.hutool.log.level.Level;
-import sun.misc.Unsafe;
+import cn.hutool.core.thread.ThreadFactoryBuilder;
+import lombok.extern.log4j.Log4j2;
 
+import java.util.concurrent.*;
+
+@Log4j2
 public class MyTest {
-    private static Log4j2Log log = new Log4j2Log(MyTest.class);
 
-    public static void main(String[] args) {
-        log.log(Level.INFO, "hello World");
 
-        Unsafe unsafe = null;
+
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+
 
     }
 

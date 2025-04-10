@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25be0b99-6446-434c-9f6c-3c8760f83da4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/annotation/MyAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/annotation/MyAnnotations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/bean/MyAnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/test/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/ServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/annotation/InitSex.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/annotation/InitSex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/annotation/ValidateAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/annotation/ValidateAge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/test/java/com/yn/customer/CustomerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/test/java/com/yn/customer/CustomerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/yn/customer/test/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,7 +40,6 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
-    <option name="explicitlyEnabledProfiles" value="native" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -68,49 +58,50 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LearningSpringBootApplicationLearningSpringBootApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ServletInitializer.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerApplicationTests.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerApplicationTests.testMyAnnotation.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.LearningSpringBoot [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.LearningSpringBoot [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.LearningSpringBoot [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.LearningSpringBoot [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.customer [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.customer [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.publisher [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CustomerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PublisherApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/arthurwang/Git/Mine/LearningSpringBoot&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LearningSpringBootApplicationLearningSpringBootApplication.executor": "Run",
+    "Application.MyTest.executor": "Run",
+    "Application.ServletInitializer.executor": "Run",
+    "JUnit.CustomerApplicationTests.test.executor": "Run",
+    "JUnit.CustomerApplicationTests.testMyAnnotation.executor": "Run",
+    "Maven.LearningSpringBoot [clean].executor": "Run",
+    "Maven.LearningSpringBoot [compile].executor": "Run",
+    "Maven.LearningSpringBoot [deploy].executor": "Run",
+    "Maven.LearningSpringBoot [install].executor": "Run",
+    "Maven.customer [clean].executor": "Run",
+    "Maven.customer [compile].executor": "Run",
+    "Maven.publisher [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CustomerApplication.executor": "Run",
+    "Spring Boot.PublisherApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/arthurwang/Git/Mine/LearningSpringBoot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -121,7 +112,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerApplicationTests.testMyAnnotation">
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+    <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yn.customer.test.MyTest" />
+      <module name="customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yn.customer.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServletInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yn.customer.ServletInitializer" />
       <module name="customer" />
@@ -184,6 +188,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MyTest" />
       <item itemvalue="Application.ServletInitializer" />
       <item itemvalue="JUnit.CustomerApplicationTests.testMyAnnotation" />
       <item itemvalue="JUnit.CustomerApplicationTests.test" />
@@ -192,6 +197,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyTest" />
         <item itemvalue="JUnit.CustomerApplicationTests.testMyAnnotation" />
         <item itemvalue="Application.ServletInitializer" />
         <item itemvalue="JUnit.CustomerApplicationTests.test" />
@@ -201,8 +207,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -240,6 +246,17 @@
       <workItem from="1736908278743" duration="1232000" />
       <workItem from="1736922233332" duration="1197000" />
       <workItem from="1737357285416" duration="664000" />
+      <workItem from="1740561001276" duration="599000" />
+      <workItem from="1740620106773" duration="12397000" />
+      <workItem from="1740706958261" duration="921000" />
+      <workItem from="1740707890614" duration="14170000" />
+      <workItem from="1740732632116" duration="5406000" />
+      <workItem from="1740995266929" duration="49000" />
+      <workItem from="1740995322351" duration="2246000" />
+      <workItem from="1741051672710" duration="13969000" />
+      <workItem from="1741140567518" duration="5299000" />
+      <workItem from="1742889478064" duration="3714000" />
+      <workItem from="1743672744105" duration="934000" />
     </task>
     <servers />
   </component>
