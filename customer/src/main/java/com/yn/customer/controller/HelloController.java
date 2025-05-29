@@ -189,4 +189,14 @@ public class HelloController {
     public String sendMail() {
         return mailService.sendMail();
     }
+
+    @GetMapping("/log")
+    public String log() {
+        log.info("log info");
+        log.error("log error");
+        log.warn("log warn");
+        log.debug("log debug");
+
+        return "收到了";
+    }
 }
