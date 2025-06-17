@@ -7,9 +7,9 @@
             </Pattern>
         </layout>
     </appender>
-    <logger name="com.yn.customer" level="DEBUG" additive="false">
-        <appender-ref ref="CONSOLE"/>
-    </logger>
+<!--    <logger name="com.yn.customer" level="DEBUG" additive="false">-->
+<!--        <appender-ref ref="CONSOLE"/>-->
+<!--    </logger>-->
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
     </root>
