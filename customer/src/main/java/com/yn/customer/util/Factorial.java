@@ -2,16 +2,11 @@ package com.yn.customer.util;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
-import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Stream;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @Slf4j
 public class Factorial {
@@ -42,11 +37,54 @@ public class Factorial {
             .appendValue(ChronoField.MILLI_OF_SECOND).toFormatter();
 
     public static void main(String[] args) {
-        LocalDateTime localDateTime = LocalDateTime.now();
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy我MM就是dd HH不mm一ss样SSS");
-        String dateTime = localDateTime.format(dateTimeFormatter);
 
-        log.error("dateTime:{}", dateTime);
+        Child child = new Child();
+        Arrays.stream(child.getClass().getDeclaredMethods())
+                .filter(method -> method.getName().equals("setValue") && !method.isBridge())
+                .findFirst().ifPresent(method -> {
+                    try {
+                        method.invoke(child, "hello");
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                });
+        System.out.println(child);
 
     }
+
+    static class Parent<T> {
+        AtomicInteger updateCount = new AtomicInteger();
+        private T value;
+
+        @Override
+        public String toString() {
+            return String.format("value: %s updateCount: %d", value, updateCount.get());
+        }
+
+        public void setValue(T value) {
+            System.out.println("Parent setValue called");
+            this.value = value;
+
+            updateCount.incrementAndGet();
+        }
+    }
+
+    static class Child extends Parent<String> {
+        @Override
+        public void setValue(String value) {
+            System.out.println("Child setValue called");
+
+            super.setValue(value);
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+

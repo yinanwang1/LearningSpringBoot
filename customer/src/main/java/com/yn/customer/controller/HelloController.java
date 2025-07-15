@@ -2,10 +2,7 @@ package com.yn.customer.controller;
 
 import com.yn.customer.annotation.InitSex;
 import com.yn.customer.annotation.ValidateAge;
-import com.yn.customer.bean.Car;
-import com.yn.customer.bean.MailService;
-import com.yn.customer.bean.Person;
-import com.yn.customer.bean.User;
+import com.yn.customer.bean.*;
 import com.yn.customer.schedule.AsyncTasks;
 import com.yn.customer.service.AccountService;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,8 +11,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
+import java.util.Map;
+import java.util.WeakHashMap;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.stream.LongStream;
 
 /**
  * @author arthurwang
@@ -198,5 +201,19 @@ public class HelloController {
         log.debug("log debug");
 
         return "收到了";
+    }
+
+    private Map<User, WeakReference<UserProfile>> cache = new WeakHashMap<>();
+
+    @GetMapping("/weakHashmap")
+    public void weakHashMap() {
+        String userName = "张三";
+        Executors.newSingleThreadScheduledExecutor()
+                .scheduleAtFixedRate(() -> log.info("cache size:{}", cache.size()), 1, 1, TimeUnit.SECONDS);
+        LongStream.rangeClosed(1, 2000000).forEachOrdered(i -> {
+            User user = new User();
+            user.setUsername(userName + i);
+            cache.put(user, new WeakReference<>(new UserProfile(user, "location"+ i)));
+        });
     }
 }
