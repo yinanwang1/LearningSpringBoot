@@ -2,11 +2,8 @@ package com.yn.customer.util;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.ChronoField;
-import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.lang.reflect.InvocationTargetException;
+import java.nio.file.Files;
 
 @Slf4j
 public class Factorial {
@@ -21,62 +18,55 @@ public class Factorial {
         }
     }
 
-    private static DateTimeFormatter dateTimeFormatter = new DateTimeFormatterBuilder()
-            .appendValue(ChronoField.YEAR)
-            .appendLiteral("/")
-            .appendValue(ChronoField.MONTH_OF_YEAR)
-            .appendLiteral("/")
-            .appendValue(ChronoField.DAY_OF_MONTH)
-            .appendLiteral(" ")
-            .appendValue(ChronoField.HOUR_OF_DAY)
-            .appendLiteral(":")
-            .appendValue(ChronoField.MINUTE_OF_HOUR)
-            .appendLiteral(":")
-            .appendValue(ChronoField.SECOND_OF_MINUTE)
-            .appendLiteral(".")
-            .appendValue(ChronoField.MILLI_OF_SECOND).toFormatter();
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
 
-    public static void main(String[] args) {
-
-        Child child = new Child();
-        Arrays.stream(child.getClass().getDeclaredMethods())
-                .filter(method -> method.getName().equals("setValue") && !method.isBridge())
-                .findFirst().ifPresent(method -> {
-                    try {
-                        method.invoke(child, "hello");
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                });
-        System.out.println(child);
+        //String className = "com.yn.customer.util.Parent";
+        //Class clazz = Class.forName(className);
+        //Method[] methods = clazz.getMethods();
+        //log.info("wyn aaa");
+        //for (Method method : methods) {
+        //    log.info("method.getName() => {}", method.getName());
+        //    Annotation[] annotations = method.getAnnotations();
+        //    for (Annotation annotation : annotations) {
+        //        log.info("annotation.annotationType() => {}", annotation.annotationType());
+        //        log.info("annotation.toString() => {}", annotation.toString());
+        //        if (!annotation.annotationType().equals(MyAnnotation.class)) {
+        //            continue;
+        //        }
+        //        MyAnnotation annotation1 = (MyAnnotation) annotation;
+        //        String name = annotation1.name();
+        //        log.info("annotation1.name() => {}", name);
+        //    }
+        //}
+        //log.info("wyn bbb");
+        //
+        //log.info("wyn 111");
+        //Annotation[] annotations = clazz.getAnnotations();
+        //for (Annotation annotation : annotations) {
+        //    log.info("annotation.annotationType() => {}", annotation.annotationType());
+        //    log.info("annotation.toString() => {}", annotation.toString());
+        //    MyAnnotation annotation1 = (MyAnnotation) annotation;
+        //    String name = annotation1.name();
+        //    log.info("annotation1.name() => {}", name);
+        //}
+        //
+        //
+        //className = "com.yn.customer.util.Child";
+        //clazz = Class.forName(className);
+        //
+        //log.info("wyn 222");
+        //annotations = clazz.getAnnotations();
+        //for (Annotation annotation : annotations) {
+        //    log.info("annotation.annotationType() => {}", annotation.annotationType());
+        //    log.info("annotation.toString() => {}", annotation.toString());
+        //    MyAnnotation annotation1 = (MyAnnotation) annotation;
+        //    String name = annotation1.name();
+        //    log.info("annotation1.name() => {}", name);
+        //}
 
     }
 
-    static class Parent<T> {
-        AtomicInteger updateCount = new AtomicInteger();
-        private T value;
 
-        @Override
-        public String toString() {
-            return String.format("value: %s updateCount: %d", value, updateCount.get());
-        }
-
-        public void setValue(T value) {
-            System.out.println("Parent setValue called");
-            this.value = value;
-
-            updateCount.incrementAndGet();
-        }
-    }
-
-    static class Child extends Parent<String> {
-        @Override
-        public void setValue(String value) {
-            System.out.println("Child setValue called");
-
-            super.setValue(value);
-        }
-    }
 }
 
 

@@ -9,6 +9,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.lang.ref.WeakReference;
@@ -26,11 +28,16 @@ import java.util.stream.LongStream;
 @Slf4j
 @RestController
 public class HelloController {
+
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     @GetMapping(value = {"/hello", "/"})
     public String handle(@RequestParam("name") String name) {
         log.info("请求进来了啊");
         return "Hello, Spring boot 2!" + " 你好：" + name;
     }
+
     @Autowired
     Car car;
 
@@ -38,12 +45,12 @@ public class HelloController {
     Person person;
 
     @RequestMapping("/car")
-    public Car car(){
+    public Car car() {
         return car;
     }
 
     @RequestMapping("/person")
-    public Person person(){
+    public Person person() {
         return person;
     }
 
@@ -114,7 +121,7 @@ public class HelloController {
         } finally {
             log.info("task two finally");
         }
-        
+
 
         return "task two";
     }
@@ -213,7 +220,25 @@ public class HelloController {
         LongStream.rangeClosed(1, 2000000).forEachOrdered(i -> {
             User user = new User();
             user.setUsername(userName + i);
-            cache.put(user, new WeakReference<>(new UserProfile(user, "location"+ i)));
+            cache.put(user, new WeakReference<>(new UserProfile(user, "location" + i)));
         });
+    }
+
+    @GetMapping("/saveToRedis")
+    public String saveToRedis(@RequestParam("username") String username, @RequestParam("age") Integer age) {
+        User user = new User();
+        user.setAge( age);
+        user.setUsername(username);
+
+        redisTemplate.opsForValue().set("user_object", user);
+
+        return "保存成功";
+    }
+
+    @GetMapping("/getFromRedis")
+    public String getFromRedis() {
+        Object object = redisTemplate.opsForValue().get("user_object");
+
+        return (null == object) ? "空的" :object.toString();
     }
 }

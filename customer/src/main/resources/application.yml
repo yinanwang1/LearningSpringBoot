@@ -53,6 +53,15 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     maxAge: 14400000
 
+  # redis配置
+  data:
+    redis:
+      host: 192.168.30.237
+      port: 6379
+      password: admin
+      cachePrefix: ${spring.application.name}
+      defaultExpiration: 300
+
 #server:
 #  port: 8888
 

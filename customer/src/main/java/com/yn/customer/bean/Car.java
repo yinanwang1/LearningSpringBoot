@@ -21,10 +21,19 @@ public class Car implements Serializable {
     @Serial
     private static final long serialVersionUID = -4915931152288524152L;
 
-    private String name;
-    private String price;
+    public String name;
+    public String price;
     private String color;
     private Integer weight;
+
+    public void shout() {
+        log.info("{} is running at {}", name, new DateTime());
+    }
+
+    public void add(int a, int b) {
+        int c = a + b;
+        log.info("{} + {} = {}", a, b, c);
+    }
 }
 
 

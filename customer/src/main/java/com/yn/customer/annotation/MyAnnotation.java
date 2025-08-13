@@ -10,8 +10,8 @@ import java.lang.annotation.*;
  * 2025/1/15 10:33
  **/
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-@Repeatable(MyAnnotations.class)
+@Target({ElementType.TYPE, ElementType.METHOD})
+@Inherited
 public @interface MyAnnotation {
     String name() default "";
 }

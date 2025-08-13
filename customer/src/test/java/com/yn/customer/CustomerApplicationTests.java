@@ -1,19 +1,11 @@
 package com.yn.customer;
 
-import com.yn.customer.annotation.MyAnnotation;
-import com.yn.customer.annotation.MyAnnotations;
-import com.yn.customer.bean.MyAnnotationTest;
-import com.yn.customer.bean.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.time.*;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.Optional;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -47,10 +39,7 @@ class CustomerApplicationTests {
 
     @Test
     void testMyAnnotation() {
-        MyAnnotations myAnnotations = MyAnnotationTest.class.getAnnotation(MyAnnotations.class);
-        for (MyAnnotation annotation : myAnnotations.value()) {
-            log.info("annotation.name() => {}", annotation.name());
-        }
+
     }
 
 }
